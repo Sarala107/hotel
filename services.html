@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/styles/swiper.min.css" />
+    <!-- jquery -->
+    <script src="./assets/js/jquery.js"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header-start -->
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <h3>LOGO</h3>
+        </div>
+
+        <ul class="nav-links">
+          <li>
+            <a class="navLinkBtn" href="index.html">
+              <button class="nav-btn">Home</button>
+            </a>
+          </li>
+
+          <li>
+            <a class="navLinkBtn" href="about.html">
+              <button class="nav-btn">About Us</button>
+            </a>
+          </li>
+
+          <li>
+            <a class="navLinkBtn" href="rooms.html">
+              <button class="nav-btn">Rooms</button>
+            </a>
+          </li>
+
+          <li>
+            <a class="navLinkBtn" href="services.html">
+              <button class="nav-btn">Services</button>
+            </a>
+          </li>
+
+          <li>
+            <a class="navLinkBtn" href="gallery.html">
+              <button class="nav-btn">Gallery</button>
+            </a>
+          </li>
+
+          <li>
+            <a class="navLinkBtn" href="attractions.html">
+              <button class="nav-btn">Attractions</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="side-nav-btn">
+          <div class="das"></div>
+        </div>
+      </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- side-nav-start -->
+    <div class="side-nav">
+      <div class="side-nav-close-btn">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <div class="logo">
+        <a href="index.html">
+          <h3>LOGO</h3>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a class="navLinkBtn" href="index.html">
+            <button class="nav-btn">Home</button>
+          </a>
+        </li>
+
+        <li>
+          <a class="navLinkBtn" href="about.html">
+            <button class="nav-btn">About Us</button>
+          </a>
+        </li>
+
+        <li>
+          <a class="navLinkBtn" href="rooms.html">
+            <button class="nav-btn">Rooms</button>
+          </a>
+        </li>
+
+        <li>
+          <a class="navLinkBtn" href="services.html">
+            <button class="nav-btn">Services</button>
+          </a>
+        </li>
+
+        <li>
+          <a class="navLinkBtn" href="gallery.html">
+            <button class="nav-btn">Gallery</button>
+          </a>
+        </li>
+
+        <li>
+          <a class="navLinkBtn" href="attractions.html">
+            <button class="nav-btn">Attractions</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- side-nav-end -->
+
+    <div class="contact-button">
+      <svg
+        class="iconContact"
+        width="27"
+        height="27"
+        viewBox="0 0 27 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.0938 8.43749H21.0431C20.8284 6.58751 19.9414 4.88092 18.5506 3.64223C17.1599 2.40354 15.3624 1.71913 13.5 1.71913C11.6376 1.71913 9.84013 2.40354 8.44938 3.64223C7.05862 4.88092 6.17157 6.58751 5.95687 8.43749H5.90625C4.78737 8.43749 3.71431 8.88197 2.92314 9.67314C2.13197 10.4643 1.6875 11.5374 1.6875 12.6562C1.6875 13.7751 2.13197 14.8482 2.92314 15.6393C3.71431 16.4305 4.78737 16.875 5.90625 16.875H7.59375V9.28124C7.59375 7.71481 8.21601 6.21253 9.32365 5.10489C10.4313 3.99726 11.9336 3.37499 13.5 3.37499C15.0664 3.37499 16.5687 3.99726 17.6763 5.10489C18.784 6.21253 19.4062 7.71481 19.4062 9.28124V17.7187C19.4057 18.4918 19.1397 19.2412 18.6529 19.8417C18.166 20.4422 17.4878 20.8574 16.7316 21.0178C16.5063 20.2279 16.0007 19.5472 15.3095 19.1033C14.6183 18.6595 13.789 18.4829 12.977 18.6068C12.1649 18.7307 11.426 19.1465 10.8985 19.7762C10.3711 20.4059 10.0914 21.2064 10.112 22.0276C10.1325 22.8487 10.4518 23.6342 11.01 24.2368C11.5683 24.8394 12.3271 25.2178 13.1443 25.3009C13.9615 25.384 14.781 25.1663 15.4492 24.6884C16.1173 24.2106 16.5883 23.5055 16.7737 22.7053C17.971 22.5278 19.0651 21.9272 19.8576 21.0124C20.6501 20.0976 21.0887 18.9291 21.0938 17.7187V16.875C22.2126 16.875 23.2857 16.4305 24.0769 15.6393C24.868 14.8482 25.3125 13.7751 25.3125 12.6562C25.3125 11.5374 24.868 10.4643 24.0769 9.67314C23.2857 8.88197 22.2126 8.43749 21.0938 8.43749ZM3.375 12.6562C3.375 11.9849 3.64168 11.3411 4.11639 10.8664C4.59109 10.3917 5.23492 10.125 5.90625 10.125V15.1875C5.23492 15.1875 4.59109 14.9208 4.11639 14.4461C3.64168 13.9714 3.375 13.3276 3.375 12.6562V12.6562ZM13.5 23.625C13.1662 23.625 12.84 23.526 12.5625 23.3406C12.285 23.1552 12.0687 22.8916 11.941 22.5833C11.8132 22.2749 11.7798 21.9356 11.8449 21.6083C11.91 21.2809 12.0708 20.9803 12.3068 20.7443C12.5428 20.5082 12.8434 20.3475 13.1708 20.2824C13.4981 20.2173 13.8374 20.2507 14.1458 20.3784C14.4541 20.5062 14.7177 20.7225 14.9031 21C15.0885 21.2775 15.1875 21.6037 15.1875 21.9375C15.1875 22.385 15.0097 22.8143 14.6932 23.1307C14.3768 23.4472 13.9476 23.625 13.5 23.625V23.625ZM21.0938 15.1875V10.125C21.7651 10.125 22.4089 10.3917 22.8836 10.8664C23.3583 11.3411 23.625 11.9849 23.625 12.6562C23.625 13.3276 23.3583 13.9714 22.8836 14.4461C22.4089 14.9208 21.7651 15.1875 21.0938 15.1875V15.1875Z"
+          fill="white"
+        />
+      </svg>
+
+      <svg
+        class="iconArrow"
+        width="27"
+        height="27"
+        viewBox="0 0 27 27"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8.9874 3.93693C8.84021 4.08762 8.75781 4.28991 8.75781 4.50056C8.75781 4.7112 8.84021 4.91349 8.9874 5.06418L17.2106 13.5L8.9874 21.9341C8.84021 22.0848 8.75781 22.2871 8.75781 22.4977C8.75781 22.7084 8.84021 22.9107 8.9874 23.0614C9.05895 23.1348 9.14448 23.1933 9.23897 23.2331C9.33345 23.273 9.43497 23.2936 9.53753 23.2936C9.64008 23.2936 9.7416 23.273 9.83608 23.2331C9.93057 23.1933 10.0161 23.1348 10.0877 23.0614L18.8323 14.0889C18.9859 13.9314 19.0718 13.72 19.0718 13.5C19.0718 13.28 18.9859 13.0686 18.8323 12.9111L10.0877 3.93862C10.0161 3.86514 9.93057 3.80674 9.83608 3.76686C9.7416 3.72698 9.64008 3.70644 9.53753 3.70644C9.43497 3.70644 9.33345 3.72698 9.23897 3.76686C9.14448 3.80674 9.05895 3.86514 8.9874 3.93862V3.93693Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+
+    <!-- contact-popup-start -->
+    <div class="contact-popup">
+      <div class="contact-form">
+        <div class="contact-title">
+          <h2>Drop Us A Message</h2>
+          <p>
+            Our team is here to support you 24/7. Please feel free to provide
+            your queries. You will get response within few minutes.
+          </p>
+        </div>
+
+        <form action="">
+          <div class="form-inputs">
+            <div class="input-group">
+              <div class="group">
+                <label for="fullName">Name</label>
+                <input
+                  type="text"
+                  name="Name"
+                  id="fullName"
+                  placeholder="John Deo"
+                />
+              </div>
+
+              <div class="group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  name="Email"
+                  id="Email"
+                  placeholder="example@name.com"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="group">
+                <label for="contactNumber">Contact Number</label>
+                <input
+                  type="number"
+                  name="contactNumber"
+                  id="contactNumber"
+                  placeholder="XXX XXX XXXX"
+                />
+              </div>
+
+              <div class="group">
+                <label for="Subject">Subject</label>
+                <input
+                  type="text"
+                  name="Subject"
+                  id="Subject"
+                  placeholder="example"
+                />
+              </div>
+            </div>
+
+            <div class="group">
+              <label for="Message">Message</label>
+
+              <textarea
+                type="text"
+                name="Message"
+                id="Message"
+                cols="30"
+                rows="10"
+                placeholder="Your message to our hotel manager"
+              ></textarea>
+            </div>
+          </div>
+
+          <button class="submit-btn">
+            Submit <img src="./assets/icon/arrow-right-dark.svg" alt="" />
+          </button>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 4C14.2 4 16 5.8 16 8C16 10.1 13.9 13.5 12 15.9C10.1 13.4 8 10.1 8 8C8 5.8 9.8 4 12 4ZM12 2C8.7 2 6 4.7 6 8C6 12.5 12 19 12 19C12 19 18 12.4 18 8C18 4.7 15.3 2 12 2ZM12 6C10.9 6 10 6.9 10 8C10 9.1 10.9 10 12 10C13.1 10 14 9.1 14 8C14 6.9 13.1 6 12 6ZM20 19C20 21.2 16.4 23 12 23C7.6 23 4 21.2 4 19C4 17.7 5.2 16.6 7.1 15.8L7.7 16.7C6.7 17.2 6 17.8 6 18.5C6 19.9 8.7 21 12 21C15.3 21 18 19.9 18 18.5C18 17.8 17.3 17.2 16.2 16.7L16.8 15.8C18.8 16.6 20 17.7 20 19Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div class="text-area">
+              <h4>Address</h4>
+              <h6>Lekhnath, Amrit Marg, Kathmandu 44600, Nepal</h6>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.57062 7.88625C5.28487 6.00225 6.61537 4.30575 8.64787 3.68325C9.00874 3.57279 9.39817 3.60418 9.7367 3.77101C10.0752 3.93783 10.3374 4.22753 10.4696 4.581L11.1214 6.321C11.2262 6.60089 11.2449 6.9057 11.1753 7.19635C11.1057 7.48699 10.9508 7.75021 10.7306 7.95225L8.79187 9.7305C8.69625 9.81834 8.625 9.92944 8.58505 10.053C8.54509 10.1765 8.5378 10.3083 8.56387 10.4355L8.58112 10.5135L8.62912 10.7092C8.67187 10.8742 8.73637 11.1067 8.82712 11.3842C9.00712 11.9355 9.29437 12.6765 9.72187 13.4167C10.1494 14.157 10.6474 14.7765 11.0344 15.2077C11.2359 15.4323 11.4466 15.6485 11.6659 15.8557L11.7259 15.9112C11.8228 15.9971 11.9404 16.0564 12.0671 16.0834C12.1938 16.1103 12.3253 16.104 12.4489 16.065L14.9584 15.2752C15.2435 15.1856 15.5489 15.1832 15.8354 15.2683C16.1219 15.3535 16.3764 15.5222 16.5664 15.753L17.7536 17.1945C18.2486 17.7945 18.1901 18.6765 17.6209 19.2067C16.0654 20.6565 13.9264 20.9542 12.4384 19.7572C10.6145 18.2862 9.07687 16.4921 7.90237 14.4645C6.71816 12.4383 5.92706 10.2067 5.57062 7.887V7.88625ZM10.1351 10.5337L11.7446 9.05775C12.1851 8.65367 12.4948 8.12723 12.634 7.54595C12.7733 6.96466 12.7357 6.35503 12.5261 5.79525L11.8736 4.05525C11.6074 3.34434 11.0801 2.76172 10.3992 2.42614C9.71831 2.09057 8.93505 2.0273 8.20912 2.24925C5.68537 3.02175 3.65887 5.2845 4.08787 8.11125C4.47261 10.6178 5.3268 13.0292 6.60562 15.219C7.87242 17.4055 9.53079 19.3402 11.4979 20.9265C13.7291 22.719 16.7096 22.1077 18.6439 20.304C19.1973 19.7882 19.5332 19.0806 19.5829 18.3257C19.6327 17.5707 19.3926 16.8253 18.9116 16.2412L17.7244 14.7997C17.3444 14.3381 16.8352 14.0004 16.2621 13.8302C15.6889 13.6599 15.078 13.6648 14.5076 13.8442L12.4249 14.4997C12.3316 14.4039 12.2404 14.3061 12.1511 14.2065C11.7231 13.7329 11.3444 13.217 11.0209 12.6667C10.7059 12.1113 10.4484 11.5253 10.2521 10.9177C10.2105 10.7906 10.1715 10.6625 10.1351 10.5337V10.5337Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div class="text-area">
+              <h4>Contact Number</h4>
+              <h6>0987654321, 1234567890</h6>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 4.5H3C2.60218 4.5 2.22064 4.65804 1.93934 4.93934C1.65804 5.22064 1.5 5.60218 1.5 6V18C1.5 18.3978 1.65804 18.7794 1.93934 19.0607C2.22064 19.342 2.60218 19.5 3 19.5H21C21.3978 19.5 21.7794 19.342 22.0607 19.0607C22.342 18.7794 22.5 18.3978 22.5 18V6C22.5 5.60218 22.342 5.22064 22.0607 4.93934C21.7794 4.65804 21.3978 4.5 21 4.5V4.5ZM19.35 6L12 11.085L4.65 6H19.35ZM3 18V6.6825L11.5725 12.615C11.698 12.7021 11.8472 12.7488 12 12.7488C12.1528 12.7488 12.302 12.7021 12.4275 12.615L21 6.6825V18H3Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+
+            <div class="text-area">
+              <h4>Email Address</h4>
+              <h6>example@name.com</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact-popup- -->
+
+    <!-- banner-start -->
+    <div class="banner">
+      <div class="text-sec">
+        <div class="wrapper">
+          <div class="content">
+            <h2>Hotel Services</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna alil. Ut enim
+              ad minim veniam, quis nostrud
+            </p>
+
+            <a href="#">
+              <button>EXPLORE ROOMS</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="images-sec">
+        <div class="image-preview">
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/banner1.png" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+        <div class="image-btns">
+          <div thumbsSlider="" class="swiper mySwiper parallax-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/banner1.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner-end -->
+
+    <!-- hotel-search-start -->
+    <div class="wrapper">
+      <div class="hotel-search">
+        <div class="group">
+          <input type="text" placeholder="Check In" />
+          <div class="icon">
+            <img src="./assets/icon/clarity_date-line.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="group">
+          <input type="text" placeholder="Check Out" />
+          <div class="icon">
+            <img src="./assets/icon/clarity_date-line.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="group">
+          <select name="" id="">
+            <option value="">Time</option>
+          </select>
+        </div>
+
+        <div class="group">
+          <select name="" id="">
+            <option value="">Person</option>
+          </select>
+        </div>
+
+        <button>Check Availability</button>
+      </div>
+    </div>
+    <!-- hotel-search-end -->
+
+    <!-- services-start -->
+    <section>
+      <div class="wrapper">
+        <div class="services">
+          <div class="title">
+            <h4>Service</h4>
+            <h2>Hotel Services</h2>
+          </div>
+
+          <div class="list">
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/car.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Pickup/Dropoff</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/restaurant.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Restaurant</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/food.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">24 Hours Room Service</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/bar.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Bar</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/parking.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Free Parking</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/security.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Security</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/wifi.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Free Wifi</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/spa.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Spa</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/av.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">AC</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/swimming-pool.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Pool</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon-area">
+                <img src="./assets/icon/tv.png" alt="" />
+              </div>
+
+              <div class="body-area">
+                <div class="name">Smart TV</div>
+                <div class="das"></div>
+                <p>
+                  We are using our strengths to not only further work in our own
+                  operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services-end -->
+
+    <!-- footer-start -->
+    <footer>
+      <div class="wrapper">
+        <div class="mob-footer">
+          <h5>© ALL RIGHTS RESERVED.</h5>
+
+          <div class="social-media">
+            <a href="#">
+              <div class="icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="icon">
+                <i class="fab fa-pinterest"></i>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="list">
+          <div class="item">
+            <div class="logo">
+              <h2>logo</h2>
+            </div>
+
+            <div class="footer-body">
+              <h5>© ALL RIGHTS RESERVED.</h5>
+
+              <h5>Phone: +977-9876543210</h5>
+
+              <h5>Email: hello@world.com</h5>
+            </div>
+
+            <div class="social-media">
+              <a href="#">
+                <div class="icon">
+                  <i class="fab fa-facebook"></i>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="icon">
+                  <i class="fab fa-pinterest"></i>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html">
+                  <button class="nav-btn active">Home</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="about.html">
+                  <button class="nav-btn">About Us</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="rooms.html">
+                  <button class="nav-btn">Rooms</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="services.html">
+                  <button class="nav-btn">Services</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="gallery.html">
+                  <button class="nav-btn">Gallery</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="attractions.html">
+                  <button class="nav-btn">Attractions</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- swiper js -->
+    <script src="./assets/js/swiper.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".hotel-rooms .image-area .mySwiper", {
+        slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".banner .mySwiper", {
+        spaceBetween: 0,
+        slidesPerView: 3,
+      });
+
+      var swiper2 = new Swiper(".banner .mySwiper2", {
+        preloadImages: false,
+        init: true,
+        loop: true,
+        speed: 1200,
+        grabCursor: true,
+        mousewheel: false,
+        keyboard: true,
+        simulateTouch: true,
+        // parallax: true,
+        effect: "slide",
+        pagination: false,
+        scrollbar: false,
+
+        thumbs: {
+          swiper: swiper,
+        },
+
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="./assets/js/scripts.js"></script>
+
+    <script>
+      // stars
+      const stars = document.querySelectorAll(".stars");
+
+      const fullStar = `
+        <svg
+          width="15"
+          height="14"
+          viewBox="0 0 15 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.33333 1.01324L9.2347 4.36449L9.34679 4.56205L9.56931 4.6076L13.3441 5.38032L10.7444 8.22422L10.5912 8.39187L10.6166 8.61758L11.0482 12.4464L7.54013 10.8528L7.33333 10.7588L7.12653 10.8528L3.61847 12.4464L4.05005 8.61758L4.0755 8.39187L3.92224 8.22422L1.32256 5.38032L5.09735 4.6076L5.31988 4.56205L5.43196 4.36449L7.33333 1.01324Z"
+            fill="#141414"
+            stroke="#141414"
+          />
+        </svg>
+      `;
+
+      const blankStar = `
+      <svg
+        width="15"
+        height="14"
+        viewBox="0 0 15 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.66665 1.01324L9.56801 4.36449L9.6801 4.56205L9.90262 4.6076L13.6774 5.38032L11.0777 8.22422L10.9245 8.39187L10.9499 8.61758L11.3815 12.4464L7.87345 10.8528L7.66665 10.7588L7.45985 10.8528L3.95179 12.4464L4.38337 8.61758L4.40881 8.39187L4.25556 8.22422L1.65588 5.38032L5.43067 4.6076L5.65319 4.56205L5.76528 4.36449L7.66665 1.01324Z"
+          stroke="#141414"
+        />
+      </svg>
+      `;
+
+      stars.forEach((star, index) => {
+        let value = star.dataset.value;
+        let allStars = [];
+
+        for (let i = 0; i < value; i++) {
+          allStars.push(fullStar);
+        }
+
+        for (let j = 0; j < 5; j++) {
+          if (allStars.length != 5) {
+            allStars.push(blankStar);
+          }
+        }
+
+        stars[index].innerHTML =
+          allStars[0] + allStars[1] + allStars[2] + allStars[3] + allStars[4];
+      });
+    </script>
+  </body>
+</html>

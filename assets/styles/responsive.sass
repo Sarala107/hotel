@@ -1,0 +1,409 @@
+@import './mixin.sass'
+
+@media only screen and ( max-width:  1300px)
+  .wrapper
+    max-width: 1200px
+
+@media only screen and ( max-width:  1200px)
+  .wrapper
+    max-width: 1100px
+
+  /***********      hotel-rooms      ***********/
+  .hotel-rooms
+    .list
+      .item
+        .footer-area
+          .hotel-feature-list
+            padding: .5rem
+
+            .feat
+              .icon
+                width: 30px
+
+              .name
+                font-size: 11px
+
+@media only screen and ( max-width:  1100px)
+  .wrapper
+    max-width: 1000px
+
+  /***********      services      ***********/
+  .services
+    .list
+      @include grid($columns: 1fr 1fr 1fr)
+
+  /***********      blog      ***********/
+  .blog
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      --n: 5; /* number of rows*/
+      --m: 3; /* number of columns */
+
+@media only screen and ( max-width:  1000px)
+  .wrapper
+    max-width: 800px
+
+  header
+    .wrapper
+      .nav-links
+        display: none
+
+      .side-nav-btn
+        display: flex
+
+  /***********      banner      ***********/
+  .banner
+    .text-sec
+      .wrapper
+        .content
+          width: 100%
+
+    .images-sec
+      .image-btns
+        display: none
+
+  /***********      about      ***********/
+  .attractions
+    .about
+      height: 100%
+
+      &:nth-child(even)
+        .wrapper
+          @include grid($columns: 1fr)
+
+        .hidden-div
+          display: none
+
+        .image-sec
+          left: 0 !important
+          width: 100%
+
+  .about
+    height: 100%
+
+    .wrapper
+      @include grid($columns: 1fr)
+      margin: 50px auto
+
+    .hidden-div
+      display: none
+
+    .image-sec
+      width: 100%
+
+  /***********      hotel-rooms      ***********/
+  .hotel-rooms
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      services      ***********/
+  .services
+    .list
+      @include grid($columns: 1fr 1fr)
+
+  /***********      blog-page      ***********/
+  .blog-page
+    .all-blog
+      @include grid($columns: 1fr)
+
+      .recent-post, .best-rooms
+        .list
+          .item
+            .image
+              width: 200px
+
+            .details
+              width: 100%
+
+  /***********      room-details      ***********/
+  .room-details
+    .room-details-image
+      .images-sec
+        height: 450px
+
+        .image-btns
+          .swiper-slide
+            .item
+              height: 100px
+
+    .hotel-details-area
+      @include grid($columns: 1fr)
+
+@media only screen and ( max-width:  900px)
+  .hell
+
+@media only screen and ( max-width:  800px)
+  .wrapper
+    max-width: 600px
+
+  /***********      banner      ***********/
+  .banner
+    .images-sec
+      .image-preview
+        .swiper-slide
+          height: 400px
+
+    .text-sec
+      .wrapper
+        .content
+          h2
+            font-size: 30px
+
+          p
+            font-size: 15px
+            margin: 18px 0
+
+          button
+            font-size: 16px
+
+  /***********      hotel-search      ***********/
+  .hotel-search
+    flex-direction: column
+
+    .group
+      padding-right: 25px
+
+      .icon
+        right: 25px
+
+  /***********      hotel-rooms      ***********/
+  .hotel-rooms
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      services      ***********/
+  .services
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      blog      ***********/
+  .blog
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      footer      ***********/
+  footer
+    padding: 1rem 0
+
+    .mob-footer
+      display: flex
+
+    .list
+      display: none
+
+  /***********      hotel-ability      ***********/
+  .hotel-ability
+    .list
+      @include grid($columns: 1fr 1fr)
+
+      .item
+        margin-bottom: 1rem
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      --n: 5; /* number of rows*/
+      --m: 2; /* number of columns */
+      --h: calc((140vh - (var(--n) - 1)*var(--g))/var(--n))
+      height: 140vh
+
+  /***********      room-details      ***********/
+  .room-details
+    .room-details-image
+      .images-sec
+        height: 300px
+
+        .image-btns
+          .swiper-slide
+            .item
+              height: 100px
+
+    .hotel-details-area
+      .hotel-details
+        .navigate-btn
+          li
+            font-size: 14px
+            padding: 1rem
+            margin: 0
+
+        .list
+          .item
+            .room-services
+              @include grid($columns: 1fr 1fr 1fr)
+
+  /***********      blog-page      ***********/
+  .blog-page
+    .all-blog
+      .blog-post, .blog-details-post
+        .item
+          .blog-image
+            height: 300px
+
+@media only screen and ( max-width:  600px)
+  /***********      contact-button      ***********/
+  .contact-button
+    &.active
+      right: 0
+
+@media only screen and ( max-width:  500px)
+  /***********      room-details      ***********/
+  .room-details
+    .hotel-details-area
+      .hotel-details
+        .navigate-btn
+          flex-wrap: wrap
+
+          li
+            &::after
+              display: none
+
+        .list
+          .item
+            .room-services
+              @include grid($columns: 1fr 1fr)
+
+      .room-booking-area
+        .best-rooms
+          .list
+            .item
+              flex-direction: column
+
+              .image
+                width: 100%
+                height: 200px
+
+              .details
+                width: 100%
+
+  /***********      blog-page      ***********/
+  .blog-page
+    .all-blog
+      .blog-post, .blog-details-post
+        .item
+          .blog-image
+            height: 200px
+
+      .recent-post, .best-rooms
+        .list
+          .item
+            flex-direction: column
+
+            .image
+              height: 200px
+              width: 100%
+
+            .details
+              width: 100%
+
+      .leave-comment
+        .booking-form
+          .form-inputs
+            .input-group
+              flex-direction: column
+
+              .group
+                width: 100%
+                margin-bottom: 2rem
+
+                &:nth-last-child(1)
+                  margin-bottom: 0
+
+@media only screen and ( max-width:  450px)
+  /***********      section      ***********/
+  section
+    padding: 30px 0
+
+  /***********      wrapper      ***********/
+  .wrapper
+    padding: 0 1rem
+
+  /***********      title      ***********/
+  .title
+    margin-bottom: 25px
+
+    h4
+      font-size: 12px
+
+    h2
+      font-size: 30px
+
+  /***********      hotel-rooms      ***********/
+  .hotel-rooms
+    .list
+      @include grid($columns: 1fr)
+
+      .item
+        .image-area
+          .swiper-slide
+            height: 180px
+
+  /***********      blog      ***********/
+  .blog
+    .list
+      .item
+        .blog-image
+          height: 180px
+
+  /***********      hotel-ability      ***********/
+  .hotel-ability
+    .list
+      @include grid($columns: 1fr)
+
+  /***********      gallery      ***********/
+  .gallery
+    .list
+      --n: 10; /* number of rows*/
+
+  /***********      room-details      ***********/
+  .room-details
+    .room-details-image
+      .images-sec
+        height: 200px
+
+        .image-btns
+          .swiper-slide
+            .item
+              height: 80px
+              width: 180px
+
+    .hotel-details-area
+      .room-booking-area
+        .start-booking
+          .title-sec
+            .form-title
+              font-size: 18px
+
+            .price
+              font-size: 18px
+              span
+                font-size: 11px
+
+          .booking-form
+            .form-inputs
+              .input-group
+                flex-direction: column
+
+                .group
+                  width: 100%
+                  margin-bottom: 2rem
+
+                  &:nth-last-child(1)
+                    margin-bottom: 0
+
+  /***********      contact-popup      ***********/
+  .contact-popup
+    .contact-form
+      .form-inputs
+        .input-group
+          flex-direction: column
+
+          .group
+            width: 100%
+            margin-bottom: 2rem
+
+            &:nth-last-child(1)
+              margin-bottom: 0
